@@ -3,12 +3,12 @@ const express= require("express");
 const mongoose=require("mongoose");
 require("dotenv").config();
 
-//Requerimos el router definido en user.js 
-const userRoutes=require("./routes/user")
-
 //Declaramos e inicializamos la app
 const app=express()
 const port= process.env.PORT || 9000
+
+//Requerimos el router definido en user.js 
+const userRoutes=require("./routes/user")
 
 //middleware 
 //Le añadira el prefijo "/api" a todas las rutas de user

@@ -1,4 +1,4 @@
-// Requerimos a express ey declaramos una constante router
+// Requerimos a express y declaramos una constante router
 const express= require("express");
 const router=express.Router();
 const userModel=require("../models/UserModel")
